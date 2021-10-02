@@ -8,10 +8,25 @@
 </head>
 <body>
     <main>
-        <h1>I am the index page</h1>
+        <h1>My awesome Team</h1>
+        <!-- this is where our dynamic data will go-->
+        <section id="team-members"></section>
     </main>
 
-    <!-- templates go here-->
+    <!-- templates go here. by default, template tags don't get rendered into the view -->
+    <template id="bio-template">
+        <section class="bio-panel">
+            <div class="p_avatar">
+                <img src="" alt="">
+            </div>
+    
+            <h2 class="p_name">slug</h2>
+            <h3 class="p_role">slug</h3>
+            <p class="p-description">
+                slug
+            </p>
+        </section>
+    </template>
 
     <!-- end template-->
     <script src="js/main.js" type="module" defer></script>
